@@ -8,14 +8,25 @@
     background-color: var(--white);
     border-radius: 2rem;
     box-shadow: 0 2rem 4rem rgba(0, 0, 0, .5);
+    cursor: pointer;
+    transition: all .7s ease;
 
     &__container{
         display: flex;
         flex-direction: column;
         width: calc(var(--phone-width) - 2rem);
         height: calc(var(--phone-height) - 2rem);
-        background-color: var(--light-grayish-violet);
+        background-color: var(--light-grayish-violet); 
         border-radius: 2rem;
+        transition: all .1s ease .7s;
+    }
+
+    &:hover{
+        transform: translateY(-1rem) rotateY(180deg);
+    }
+
+    &:hover &__container{
+        transform: rotateY(-180deg);
     }
 }
 

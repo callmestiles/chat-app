@@ -89,14 +89,21 @@ body {
   height: var(--phone-height);
   background-color: var(--white);
   border-radius: 2rem;
-  box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.5); }
+  box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+  transition: all .7s ease; }
   .phone__container {
     display: flex;
     flex-direction: column;
     width: calc(var(--phone-width) - 2rem);
     height: calc(var(--phone-height) - 2rem);
     background-color: var(--light-grayish-violet);
-    border-radius: 2rem; }
+    border-radius: 2rem;
+    transition: all .1s ease .7s; }
+  .phone:hover {
+    transform: translateY(-1rem) rotateY(180deg); }
+  .phone:hover .phone__container {
+    transform: rotateY(-180deg); }
 
 .top {
   display: flex;
