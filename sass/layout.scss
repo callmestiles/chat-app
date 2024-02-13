@@ -1,0 +1,45 @@
+.content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 20;
+    // width: 100%;
+
+    @media only screen and (max-width: $bp-small){
+        flex-direction:  column;
+        padding: 5rem;
+    }
+}
+
+.phone{
+    margin-right: 15rem;
+
+    @media only screen and (max-width: $bp-small){
+        margin-right: 0;
+        margin-bottom: 5rem;
+    }
+}
+
+.text-box{
+    width: 30%;
+    &__heading {
+        font-size: 4rem;
+        font-weight: 500;
+        letter-spacing: 1px;
+        color: var(--text-very-dark-desaturated-violet);
+        margin-bottom: 2.3rem;
+    }
+
+    &__paragraph{
+        font-size: 1.6rem;
+        color: var(--text-dark-grayish-violet);
+        width: 95%;
+        line-height: 1.5;
+    }
+
+    @media only screen and (max-width: $bp-small){
+        padding: 0 3rem;
+        width: 100%;
+        text-align: center;
+    }
+}
